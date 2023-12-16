@@ -1,2 +1,2 @@
-code for Beta-LR model
+code for our Beta-LR model
 
