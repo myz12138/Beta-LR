@@ -1,1 +1,2 @@
-code for Beta-LR
+code for Beta-LR model
+
