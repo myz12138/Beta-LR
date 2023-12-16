@@ -128,14 +128,9 @@ if __name__=="__main__":
     for e3 in range(epoch3):
         train_sum,train_loss3,kl_train_sum=train(train_Dataloader3,model3,optimizer3)
         val_sum,val_loss3,kl_val_sum,entropy_list=val(val_Dataloader3,model3)
-        with open('./Beta-LR1/entropy.csv', 'w') as file:
-            writer = csv.writer(file)
-            writer.writerows(entropy_list)
-
-    
-        
-
-        
+        # with open('./Beta-LR1/entropy.csv', 'w') as file:
+        #     writer = csv.writer(file)
+        #     writer.writerows(entropy_list)
         train_lis.append(train_sum/len(train_dataset3))
         val_lis.append(val_sum/len(val_dataset3))
         kl_train_lis.append(kl_train_sum)
